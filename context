@@ -1,0 +1,10 @@
+exten => 194,1,Answer()
+  same => n,DumpChan(3,)
+  same => n,NoOP("variable Send ${num}")
+  ;same => n,DumpChan()
+  ;same => n,Wait(1)
+  ;same => n,Playback(es/welcome&es/calls-waiting-for-rep)
+  ;same => n,Dial(SIP/GWCOMCEL2/${EXTEN:1})
+  ;;
+  same => n,Dial(SIP/GWCOMCEL2/${num})
+  same => n,Hangup()
