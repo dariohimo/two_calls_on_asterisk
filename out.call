@@ -1,0 +1,5 @@
+Channel: SIP/GW2/6028879020
+Context: cliente
+Extension: 194
+Priority: 1
+Set: num=333899456
